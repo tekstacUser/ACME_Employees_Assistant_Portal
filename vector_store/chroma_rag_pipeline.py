@@ -76,7 +76,7 @@ class ChromaRAGPipeline(EnhancedRAGPipeline):
         self.collection_name = collection_name
         self.embedding_model_name = embedding_model
 
-        # TODO [10 Marks]: Vector Database Implementation - Client & Collection Setup
+        # TODO : Vector Database Implementation - Client & Collection Setup
         # ------------------------------------------------------------------
         # Implement ChromaDB embedded/persistent client initialization and
         # collection creation, then trigger ingestion when needed.
@@ -135,7 +135,7 @@ class ChromaRAGPipeline(EnhancedRAGPipeline):
     # Vector store operations
     # ------------------------------------------------------------------
     def _ingest_into_chroma(self, raw_documents: Dict[str, str]):
-        # TODO [Part of 10 Marks - Vector Database Implementation]: Document Ingestion
+        # TODO [Part - Vector Database Implementation]: Document Ingestion
         # ------------------------------------------------------------------
         # Embed and store every HR policy document as one atomic vector.
         #
@@ -171,7 +171,7 @@ class ChromaRAGPipeline(EnhancedRAGPipeline):
 
     def retrieve(self, query: str, k: int = 5) -> Tuple[List[str], float]:
         """Vector similarity retrieval via ChromaDB (replaces keyword scoring)."""
-        # TODO [10 Marks]: Embedding & Retrieval Logic - retrieve()
+        # TODO : Embedding & Retrieval Logic - retrieve()
         # ------------------------------------------------------------------
         # Implement real vector similarity search using the ChromaDB
         # collection (overrides the parent class's keyword-scoring retrieve()).
@@ -196,7 +196,7 @@ class ChromaRAGPipeline(EnhancedRAGPipeline):
 
     def retrieve_with_scores(self, query: str, k: int = 5) -> List[Dict]:
         """Retrieve chunks along with similarity scores + metadata (for UI/debugging)."""
-        # TODO [Part of 10 Marks - Embedding & Retrieval Logic]: retrieve_with_scores()
+        # TODO [Part - Embedding & Retrieval Logic]: retrieve_with_scores()
         # ------------------------------------------------------------------
         # Same vector search as retrieve(), but return similarity score and
         # metadata for each hit (used by the "Vector Store" tab / the
