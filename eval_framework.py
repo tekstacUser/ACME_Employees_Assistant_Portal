@@ -41,7 +41,7 @@ class MinimalEvaluator:
         Faithfulness measures whether the response is supported by retrieved context.
         Higher score = more facts from response appear in context.
         """
-        # TODO [10 Marks]: Business Logic Completion - Faithfulness Scoring
+        # TODO : Business Logic Completion - Faithfulness Scoring
         # ------------------------------------------------------------------
         # Implement a minimal, RAGAS-style faithfulness metric using word
         # overlap between the response and the retrieved context.
@@ -75,7 +75,7 @@ class MinimalEvaluator:
 
     def _calculate_relevance(self, query: str, response: str) -> float:
         """% of query words in response"""
-        # TODO [Part of 10 Marks - Business Logic Completion]: Relevance Scoring
+        # TODO [Part - Business Logic Completion]: Relevance Scoring
         # ------------------------------------------------------------------
         # Implement a minimal relevance metric: what fraction of the
         # response's words also appear in the query.
