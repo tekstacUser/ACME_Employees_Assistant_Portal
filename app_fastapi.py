@@ -84,7 +84,7 @@ async def home():
 # ------------------------------------------------------------------
 @app.post("/api/query")
 async def query(request: QueryRequest):
-    # TODO [10 Marks]: API Integration - End-to-End Query Orchestration
+    # TODO: API Integration - End-to-End Query Orchestration
     # ------------------------------------------------------------------
     # Implement the full request pipeline for the main chat endpoint,
     # wiring together every other component built in this assessment.
