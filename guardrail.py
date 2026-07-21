@@ -344,7 +344,7 @@ class EnhancedGuardrails:
 
     def validate_input(self, text: str) -> GuardResult:
         """Validate input for multiple safety issues"""
-        # TODO [10 Marks]: Guardrails & Input Validation - validate_input()
+        # TODO : Guardrails & Input Validation - validate_input()
         # ------------------------------------------------------------------
         # Aggregate the individual PII / prompt-injection / sensitive-keyword
         # checks into a single pass/fail safety verdict for a piece of user
