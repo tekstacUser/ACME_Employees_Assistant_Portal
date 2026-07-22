@@ -147,7 +147,7 @@ class PromptRegistryDB:
     # Promotion gates (A/B style quality gates)
     # ------------------------------------------------------------------
     def promote(self, name: str, version: int, metrics: Dict[str, float], force: bool = False) -> Dict:
-        # TODO [10 Marks]: Prompt Registry & Lifecycle Management - promote()
+        # TODO : Prompt Registry & Lifecycle Management - promote()
         # ------------------------------------------------------------------
         # Implement quality-gated promotion of a prompt version to
         # "production" status.
@@ -185,7 +185,7 @@ class PromptRegistryDB:
 
     def rollback(self, name: str) -> Optional[PromptVersion]:
         """Roll production back to the most recent previously-archived production version."""
-        # TODO [Part of 10 Marks - Prompt Registry & Lifecycle Management]: rollback()
+        # TODO [Part - Prompt Registry & Lifecycle Management]: rollback()
         # ------------------------------------------------------------------
         # Implement rollback of the current production version to the most
         # recently archived version of the same prompt.
