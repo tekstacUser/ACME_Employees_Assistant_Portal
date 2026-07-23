@@ -6,9 +6,9 @@ from pydantic import BaseModel
 from typing import List, Optional, Dict
 import os
 
-from eval_framework_minimal import MinimalEvaluator
-from guardrail_minimal import MinimalGuardrails
-from fine_tuning_config_minimal import MinimalFineTuningPipeline
+from eval_framework import MinimalEvaluator
+from guardrail import MinimalGuardrails
+from fine_tuning_config import MinimalFineTuningPipeline
 
 from vector_store.chroma_rag_pipeline import ChromaRAGPipeline
 from registry.prompt_registry_db import PromptRegistryDB, PromptStatus
