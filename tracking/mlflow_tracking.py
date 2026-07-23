@@ -60,7 +60,7 @@ class MLflowTracker:
     # ------------------------------------------------------------------
     def log_query(self, query: str, response: str, metadata, eval_result, extra_params: Optional[Dict] = None):
         """Log one RAG query/response cycle as an MLflow run."""
-        # TODO [10 Marks]: Observability, Error Handling & Logging - log_query()
+        # TODO : Observability, Error Handling & Logging - log_query()
         # ------------------------------------------------------------------
         # Implement fail-safe MLflow logging for a single RAG query/response
         # cycle. This is the most important tracking call in the app (every
