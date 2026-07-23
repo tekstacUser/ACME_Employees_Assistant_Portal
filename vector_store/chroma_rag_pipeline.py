@@ -25,7 +25,7 @@ sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import chromadb
 from chromadb.utils import embedding_functions
 
-from rag_pipeline_minimal import EnhancedRAGPipeline  # noqa: E402  (import after sys.path tweak)
+from rag_pipeline import EnhancedRAGPipeline  # noqa: E402  (import after sys.path tweak)
 
 DEFAULT_PERSIST_DIR = os.path.join(
     os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "chroma_store"
